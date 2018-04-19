@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   public allowNewServer: boolean = false;
+  public username: string = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  resetInput(): void {
+    this.username = '';
   }
 
 }
